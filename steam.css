@@ -1,0 +1,79 @@
+:root {
+    /* The main accent color and the matching text value */
+    --adw-accent-bg-rgb: 104, 76, 89 !important;
+    --adw-accent-fg-rgb: 28, 18, 19 !important;
+    --adw-accent-rgb: 104, 76, 89 !important;
+
+	/* destructive-action buttons */
+    --adw-destructive-bg-rgb: 194, 79, 87 !important;
+    --adw-destructive-fg-rgb: 227, 166, 140 !important;
+    --adw-destructive-rgb: 194, 79, 87 !important;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+    --adw-success-bg-rgb: 128, 108, 97 !important;
+    --adw-success-fg-rgb: 28, 18, 19 !important;
+    --adw-success-rgb: 128, 108, 97 !important;
+
+    --adw-warning-bg-rgb: 242, 129, 113 !important;
+    --adw-warning-fg-rgb: 28, 18, 19 !important;
+    --adw-warning-fg-a: 0.8 !important;
+    --adw-warning-rgb: 242, 129, 113 !important;
+
+    --adw-error-bg-rgb: 194, 79, 87 !important;
+    --adw-error-fg-rgb: 28, 18, 19 !important;
+    --adw-error-rgb: 194, 79, 87 !important;
+
+	/* Window */
+    --adw-window-bg-rgb: 28, 18, 19 !important;
+    --adw-window-fg-rgb: 168, 117, 105 !important;
+
+	/* Views - e.g. text view or tree view */
+    --adw-view-bg-rgb: 28, 18, 19 !important;
+    --adw-view-fg-rgb: 168, 117, 105 !important;
+
+	/* Header bar, search bar, tab bar */
+    --adw-headerbar-bg-rgb: 28, 18, 19 !important;
+    --adw-headerbar-fg-rgb: 168, 117, 105 !important;
+    --adw-headerbar-border-rgb: 86, 56, 55 !important;
+    --adw-headerbar-backdrop-rgb: 28, 18, 19 !important;
+    --adw-headerbar-shade-rgb: 0, 0, 0 !important;
+    --adw-headerbar-shade-a: 0.36 !important;
+    --adw-headerbar-darker-shade-rgb: 0, 0, 0 !important;
+    --adw-headerbar-darker-shade-a: 0.9 !important;
+
+	/* Split pane views */
+    --adw-sidebar-bg-rgb: 28, 18, 19 !important;
+    --adw-sidebar-fg-rgb: 168, 117, 105 !important;
+    --adw-sidebar-backdrop-rgb: 58, 36, 37 !important;
+    --adw-sidebar-shade-rgb: 0, 0, 0 !important;
+    --adw-sidebar-shade-a: 0.36 !important;
+    --adw-secondary-sidebar-bg-rgb: 28, 18, 19 !important;
+    --adw-secondary-sidebar-fg-rgb: 168, 117, 105 !important;
+    --adw-secondary-sidebar-backdrop-rgb: 58, 36, 37 !important;
+    --adw-secondary-sidebar-shade-rgb: 0, 0, 0 !important;
+    --adw-secondary-sidebar-shade-a: 0.36 !important;
+
+	/* Cards, boxed lists */
+    --adw-card-bg-rgb: 28, 18, 19 !important;
+    --adw-card-bg-a: 0.08 !important;
+    --adw-card-fg-rgb: 168, 117, 105 !important;
+    --adw-card-shade-rgb: 0, 0, 0 !important;
+    --adw-card-shade-a: 0.36 !important;
+
+	/* Dialogs */
+    --adw-dialog-bg-rgb: 28, 18, 19 !important;
+    --adw-dialog-fg-rgb: 168, 117, 105 !important;
+
+    /* Popovers */
+    --adw-popover-bg-rgb: 28, 18, 19 !important;
+    --adw-popover-fg-rgb: 168, 117, 105 !important;
+    --adw-popover-shade-rgb: 0, 0, 0 !important;
+    --adw-popover-shade-a: 0.36 !important;
+
+	/* Thumbnails */
+    --adw-thumbnail-bg-rgb: 28, 18, 19 !important;
+
+	/* Miscellaneous */
+    --adw-shade-rgb: 0, 0, 0 !important;
+    --adw-shade-a: 0.36 !important;
+}

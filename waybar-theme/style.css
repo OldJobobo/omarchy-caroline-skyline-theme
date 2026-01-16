@@ -1,0 +1,388 @@
+@import "../omarchy/current/theme/waybar.css";
+
+@define-color theme_bg @theme_bg_color;
+@define-color theme_fg @theme_fg_color;
+@define-color theme_accent @theme_selected_bg_color;
+@define-color theme_accent_fg @theme_selected_fg_color;
+
+@define-color color0 #1c1213;
+@define-color color1 #c24f57;
+@define-color color2 #806c61;
+@define-color color3 #f28171;
+@define-color color4 #684c59;
+@define-color color5 #a63650;
+@define-color color6 #6b6566;
+@define-color color7 #a87569;
+@define-color color8 #6d4745;
+@define-color color9 #c24f57;
+@define-color color10 #806c61;
+@define-color color11 #f28171;
+@define-color color12 #684c59;
+@define-color color13 #a63650;
+@define-color color14 #6b6566;
+@define-color color15 #e3a68c;
+@define-color glass_highlight #f8f3e8;
+@define-color glass_glow #f28171;
+@define-color glass_deep #a63650;
+@define-color module_fg @color15;
+@define-color module-bg #222222;
+
+* {
+  background: transparent;
+  color: @theme_fg;
+  border: none;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font Propo';
+  font-size: 14px;
+  
+  letter-spacing: 0.75px;
+}
+
+window#waybar {
+  background: transparent; 
+}
+
+#waybar > box {
+  margin: 4px 4px 4px 4px;
+  transition: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.modules-left {
+  padding: 0px 0px 0px;
+  margin: 0px 0px;
+}
+
+.modules-right {
+  padding: 0px 0px 0px;
+  margin: 0px 0px;
+}
+
+.modules-center {
+  border-color: transparent;
+}
+
+#workspaces {
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  margin: 4px 4px 4px 4px;
+  padding: 0px 4px 0px 4px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 12px alpha(@glass_glow, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.44), 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#workspaces button {
+  padding: 2px 10px 2px 10px;
+  margin: 7px 4px 7px 4px;
+  border-radius: 999px;
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.4) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.42) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 46%, alpha(@color7, 0.82) 68%, alpha(@color7, 0) 86%);
+  color: @color7;
+  box-shadow: inset 0 0 10px alpha(@color7, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@color7, 0.44), 0 1px 3px rgba(0, 0, 0, 0.95);
+  transition: padding 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+#workspaces button label {
+  color: @color15;
+}
+
+#workspaces button.active {
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  color: @color15;
+}
+
+#workspaces button.active label {
+  color: @color15;
+}
+
+#workspaces button:hover {
+  color: @color15;
+  padding: 2px 20px 2px 20px;
+}
+
+#workspaces button.empty {
+  opacity: 0.55;
+  border-color: alpha(@color15, 0.6);
+  color: alpha(@color15, 0.6);
+}
+
+#workspaces button.empty label {
+  color: alpha(@color15, 0.6);
+}
+
+#tray,
+#mpris,
+#cpu,
+#clock,
+#battery,
+#network,
+#memory,
+#backlight,
+#bluetooth,
+#pulseaudio,
+#custom-weather,
+#custom-update,
+#idle_inhibitor,
+#custom-expand-icon,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-updatespacman {
+  min-width: 20px;
+  margin: 4px 4px 4px 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 999px;
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  font-size: 16px;
+  border: none;
+  color: @module_fg;
+  box-shadow: inset 0 0 12px alpha(@glass_glow, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.44), 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-expand-icon {
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  min-width: 10px;
+  border: none;
+  border-radius: 999px;
+  color: @color15;
+  font-size: 18px;
+  box-shadow: inset 0 0 12px alpha(@glass_glow, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.44), 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-omarchy {
+  padding: 0px 8px 0px 8px;
+  color: @color15;
+  text-shadow: none;
+  font-size: 18px;
+}
+
+#custom-update,
+#custom-updatespacman {
+  border-color: @color10;
+  color: @color10;
+}
+
+#clock {
+  border-color: @color15;
+  color: @color15;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+#idle_inhibitor {
+  color: @color15;
+  font-size: 18px;
+}
+
+#idle_inhibitor.activated {
+  color: @color15;
+}
+
+#idle_inhibitor.deactivated {
+  border-color: @color4;
+}
+
+#tray {
+  color: @color15;
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  border-radius: 999px;
+  border: none;
+  font-size: 18px;
+  box-shadow: inset 0 0 12px alpha(@glass_glow, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.44), 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#custom-tray-cap {
+  min-width: 4px;
+  background: transparent;
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.45) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.5) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  color: @color15;
+  font-size: 18px;
+  box-shadow: inset 0 0 10px alpha(@glass_glow, 0.44), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.44);
+}
+
+#workspaces button:hover {
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.5) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.55) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 44%, alpha(@color7, 0.9) 68%, alpha(@color7, 0) 86%);
+  box-shadow: inset 0 0 12px alpha(@color7, 0.5), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@color7, 0.5), 0 1px 3px rgba(0, 0, 0, 0.95);
+}
+
+#tray:hover,
+#mpris:hover,
+#cpu:hover,
+#clock:hover,
+#battery:hover,
+#network:hover,
+#memory:hover,
+#backlight:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#custom-weather:hover,
+#custom-update:hover,
+#idle_inhibitor:hover,
+#custom-expand-icon:hover,
+#custom-omarchy:hover,
+#custom-screenrecording-indicator:hover,
+#custom-updatespacman:hover {
+  background-image:
+    linear-gradient(to bottom, alpha(@glass_highlight, 0.5) 0%, alpha(@glass_highlight, 0) 55%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 42%, alpha(@glass_deep, 0.55) 58%, alpha(@glass_deep, 0) 73%),
+    radial-gradient(ellipse at 50% 50%, alpha(@color0, 0.2) 48%, alpha(@glass_glow, 0.95) 68%, alpha(@glass_glow, 0) 86%);
+  box-shadow: inset 0 0 14px alpha(@glass_glow, 0.48), inset 0 -1px 2px alpha(@theme_bg, 0.35), inset 0 0 0 1px alpha(@glass_glow, 0.48), 0 2px 4px -2px rgba(0, 0, 0, 0.8);
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+  color: alpha(@color15, 0.6);
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  color: @color9;
+}
+
+#tray * {
+  color: @color15;
+  font-size: 18px;
+}
+
+
+#network {
+  color: @color15;
+  font-size: 18px;
+}
+
+#pulseaudio {
+  border-color: @color5;
+  color: @color15;
+  font-size: 18px;
+}
+
+#backlight {
+  border-color: @color4;
+  color: @color4;
+  font-size: 18px;
+}
+
+#battery {
+  border-color: @color7;
+  color: @color7;
+  font-size: 18px;
+}
+
+#battery.warning,
+#battery.critical {
+  border-color: @color9;
+  color: @color9;
+  font-size: 18px;
+}
+
+#cpu,
+#memory {
+  border-color: @color3;
+  color: @color5;
+}
+
+#cpu {
+  color: @color15;
+}
+
+#memory {
+  border-color: @color2;
+  color: @color11;
+}
+
+#mpris {
+  border-color: @color15;
+  color: @color15;
+  animation: none;
+  font-size: 14px;
+}
+
+#window {
+  border-color: @color11;
+  color: @color11;
+}
+
+#window label {
+  color: @color15;
+}
+
+#bluetooth {
+  border-color: @color6;
+  color: @color15;
+  font-size: 18px;
+}
+
+#custom-weather {
+  border-color: @color11;
+  color: @color11;
+  font-size: 16px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-color: @color9;
+  color: alpha(@color9, 0.5);
+  font-size: 18px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @color9;
+  animation-name: ember-blink;
+  animation-duration: 0.65s;
+  font-size: 18px;
+}
+
+tooltip {
+  padding: 6px 8px;
+  background: alpha(@theme_bg, 0.95);
+  border: 1px solid alpha(@theme_fg, 0.25);
+  border-radius: 8px;
+  font-size: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+tooltip label {
+  color: @theme_fg;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes ember-blink {
+  to {
+    color: alpha(@color0, 0.2);
+  }
+}

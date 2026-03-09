@@ -27,18 +27,10 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-caroline-skyline-them
 
 ## Wallpapers
 
-<table>
-  <tr>
-    <td><img src="backgrounds/01_caroline-skyline.png" width="220" alt="01_caroline-skyline"></td>
-    <td><img src="backgrounds/02_caroline-skyline.png" width="220" alt="02_caroline-skyline"></td>
-    <td><img src="backgrounds/03_caroline-skyline.png" width="220" alt="03_caroline-skyline"></td>
-  </tr>
-  <tr>
-    <td><img src="backgrounds/05_caroline-skyline.png" width="220" alt="05_caroline-skyline"></td>
-    <td><img src="backgrounds/06_caroline-skyline.png" width="220" alt="06_caroline-skyline"></td>
-    <td></td>
-  </tr>
-</table>
+| | | |
+| --- | --- | --- |
+| ![](backgrounds/0-sunset-skyline.png) | ![](backgrounds/1-coral-industrial-haze.png) | ![](backgrounds/2-lighthouse-cloudburst.png) |
+| ![](backgrounds/3-ferry-goldwater.png) | ![](backgrounds/4-magenta-rooftops.png) |  |
 
 ## Attribution
 

@@ -11,13 +11,13 @@ theme[title]="#684c59"
 theme[hi_fg]="#a63650"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#3a2425"
+theme[selected_bg]="#6d4745"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#a87569"
+theme[selected_fg]="#e3a68c"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#563837"
+theme[inactive_fg]="#6b6566"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
 theme[proc_misc]="#684c59"
@@ -26,45 +26,45 @@ theme[proc_misc]="#684c59"
 theme[cpu_box]="#f28171"
 theme[mem_box]="#f28171"
 theme[net_box]="#f28171"
-theme[proc_box]="#f28171"
-theme[div_line]="#563837"
+theme[proc_box]="#c24f57"
+theme[div_line]="#e3a68c"
 
 # Gradient for all meters and graphs
-theme[temp_start]="#a63650"
-theme[temp_mid]="#684c59"
-theme[temp_end]="#f28171"
+theme[temp_start]="#e3a68c"
+theme[temp_mid]="#f28171"
+theme[temp_end]="#c24f57"
 
 
-theme[cpu_start]="#a63650"
-theme[cpu_mid]="#684c59"
-theme[cpu_end]="#f28171"
+theme[cpu_start]="#e3a68c"
+theme[cpu_mid]="#f28171"
+theme[cpu_end]="#a63650"
 
 
-theme[free_start]="#684c59"
-theme[free_mid]="#806c61"
-theme[free_end]="#806c61"
+theme[free_start]="#e3a68c"
+theme[free_mid]="#f28171"
+theme[free_end]="#a63650"
 
 
-theme[cached_start]="#806c61"
-theme[cached_mid]="#806c61"
-theme[cached_end]="#806c61"
+theme[cached_start]="#e3a68c"
+theme[cached_mid]="#f28171"
+theme[cached_end]="#a63650"
 
 
-theme[available_start]="#a63650"
-theme[available_mid]="#a63650"
+theme[available_start]="#e3a68c"
+theme[available_mid]="#f28171"
 theme[available_end]="#a63650"
 
 
-theme[used_start]="#f28171"
+theme[used_start]="#e3a68c"
 theme[used_mid]="#f28171"
-theme[used_end]="#f28171"
+theme[used_end]="#a63650"
 
 
-theme[download_start]="#806c61"
-theme[download_mid]="#a63650"
-theme[download_end]="#684c59"
+theme[download_start]="#e3a68c"
+theme[download_mid]="#f28171"
+theme[download_end]="#a63650"
 
 
-theme[upload_start]="#806c61"
-theme[upload_mid]="#a63650"
-theme[upload_end]="#684c59"
+theme[upload_start]="#e3a68c"
+theme[upload_mid]="#f28171"
+theme[upload_end]="#a63650"
